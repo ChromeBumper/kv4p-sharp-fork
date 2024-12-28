@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<EnableWindowsTargeting>true</EnableWindowsTargeting>
+	<Company>Monocul.us</Company>
+	<Authors>Andrea Santaniello</Authors>
+	<Description>Radio GUI for KV4P radio</Description>
+	<PackageIcon>icon-lg-dark.png</PackageIcon>
+	<ApplicationIcon>icon-lg-dark.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon-lg-dark.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="E:\malattie\malattie_json\icon-lg-dark.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\kv4p-sharp\kv4p-sharp-lib.csproj" />
+  </ItemGroup>
+
+</Project>

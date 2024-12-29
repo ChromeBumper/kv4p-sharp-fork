@@ -112,8 +112,9 @@ public class RadioController : IDisposable
 
 
         //ddd
-
-        fs = new FileStream("c:\\Users\\nodes\\kv4p_cs.pcm", FileMode.Create);
+        //fs = new FileStream("c:\\Users\\nodes\\kv4p_cs.pcm", FileMode.Create);
+        string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads\\kv4p_cs.pcm");
+        fs = new FileStream(path, FileMode.Create);
         w = new BinaryWriter(fs);
 
 
